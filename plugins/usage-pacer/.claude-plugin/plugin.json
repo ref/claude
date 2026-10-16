@@ -1,0 +1,37 @@
+{
+  "name": "usage-pacer",
+  "version": "0.1.0",
+  "description": "Pace Claude Code's weekly usage limit day by day for the projects you choose: a side project is paused once the account runs ahead of its daily share, so your main work keeps its budget",
+  "author": {
+    "name": "ref",
+    "url": "https://github.com/ref"
+  },
+  "homepage": "https://github.com/ref/claude/tree/main/plugins/usage-pacer",
+  "repository": "https://github.com/ref/claude",
+  "license": "MIT",
+  "keywords": [
+    "claude-code",
+    "mod",
+    "usage",
+    "rate-limits",
+    "weekly-limit",
+    "budget"
+  ],
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "daily_percent": {
+      "type": "number",
+      "title": "Daily share of the weekly limit (%)",
+      "description": "Paced projects may use at most day_of_week * this many percent of the 7-day window. 14.3 = the week split evenly; lower it to keep more for unpaced work.",
+      "default": 14.3,
+      "min": 1,
+      "max": 100
+    },
+    "block_tools": {
+      "type": "boolean",
+      "title": "Also stop a running turn",
+      "description": "When the limit is crossed mid-turn, deny further tool calls and abort the turn. Off: only new prompts are blocked.",
+      "default": true
+    }
+  }
+}

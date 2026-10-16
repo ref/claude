@@ -1,0 +1,25 @@
+{
+  "name": "ref",
+  "owner": {
+    "name": "ref",
+    "url": "https://github.com/ref"
+  },
+  "description": "ref's Claude Code things: mods, plugins and other bits, served as one plugin marketplace",
+  "metadata": {
+    "pluginRoot": "./plugins"
+  },
+  "plugins": [
+    {
+      "name": "usage-pacer",
+      "source": "./plugins/usage-pacer",
+      "description": "Pace the weekly usage limit day by day for the projects you choose: a side project is paused once the account runs ahead of its daily share",
+      "category": "productivity",
+      "tags": [
+        "usage",
+        "rate-limits",
+        "weekly-limit",
+        "budget"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+# Type declarations Claude Code writes beside a loaded mod
+**/.claude-plugin/types/
+**/tsconfig.json
+node_modules/
+.DS_Store

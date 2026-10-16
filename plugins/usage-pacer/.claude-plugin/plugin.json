@@ -6,7 +6,7 @@
     "name": "ref",
     "url": "https://github.com/ref"
   },
-  "homepage": "https://github.com/ref/claude/tree/main/plugins/usage-pacer",
+  "homepage": "https://github.com/ref/claude/tree/master/plugins/usage-pacer",
   "repository": "https://github.com/ref/claude",
   "license": "MIT",
   "keywords": [
